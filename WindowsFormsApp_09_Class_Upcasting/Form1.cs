@@ -91,7 +91,7 @@ namespace WindowsFormsApp_09_Class_Upcasting
             //ex
 
             Animal dog = new Dog();
-            ((Dog)dog).d_Speak();                                           //다운캐스팅
+            ((Dog)dog).d_Speak();   //다운캐스팅
             dog.Name = "Max";
             dog.Speak();
             //dog.d_Speak;(x)
