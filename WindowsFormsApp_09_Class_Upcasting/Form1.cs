@@ -91,24 +91,25 @@ namespace WindowsFormsApp_09_Class_Upcasting
             //ex
 
             Animal dog = new Dog();
+            ((Dog)dog).d_Speak();                                           //다운캐스팅
             dog.Name = "Max";
             dog.Speak();
             //dog.d_Speak;(x)
-            Console.WriteLine($"{dog.Name} says {((Dog)dog).ani_Sound}");   //다운캐스팅
+            Console.WriteLine($"{dog.Name} says {((Dog)dog).ani_Sound}");   //다운캐스팅2
 
             Animal cat = new Cat();
+            ((Cat)cat).c_Speak();
             cat.Name = "Nibbles";
             cat.Speak();
             //cat.c_Speak();(x)
             Console.WriteLine($"{cat.Name} says {((Cat)cat).ani_Sound}");
 
             Animal bird = new Bird();
+            ((Bird)bird).b_Speak();
             bird.Name = "Fluffy";
             bird.Speak();
             //bird.b_Speak();(x)
             Console.WriteLine($"{bird.Name} says {((Bird)bird).ani_Sound}");
-
-
         }
     }
 }
